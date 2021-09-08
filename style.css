@@ -1,12 +1,81 @@
 
 
+
+/*  ABOUT/INFO BAR  */
+.main-nav {
+  display: flex;
+  list-style: none;
+  font-size: 0.7em;
+  font-family: 'Glory', sans-serif;
+  margin: 0;
+}
+
+
+a {
+  color: black;
+  text-decoration: none;  
+}
+
+
+
+/*  MAIN CONTENTS    */
+
+
+.container{
+  display: grid;
+  grid-template-rows: auto;
+  grid-gap: 100px;
+
+}
+
+.section{
+  display: grid;
+  margin: 2rem;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+
+
+/* COLOR STUFF */
+
+.whiteToBlue{
+  background: #6e6e6e; /* Old browsers */
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(129, 129, 255));
+  
+}
+
+
+
+/*MISC*/
 body, html {
     height: 100%;
-  }
+}
+
+  li {
+    padding: 20px;
+}
+
+
+  .zone {
+    cursor:pointer;
+    color:#FFF;
+    font-size:2em;
+    border-radius:4px;
+    border:1px solid #bbb;
+    transition: all 0.3s linear;
+}
+
+.hover:hover {
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
 
 .parallax {
   /* The image used */
-  background-image: url("293164-ultrawide-abstract.jpg");
+  background-image: url("background.jpg");
 
   /* Set a specific height */
   min-height: 100%;
@@ -16,4 +85,13 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+@media only screen and (max-width: 600px){
+  .main-nav{
+   font-size: 0.5em;
+      padding: 0;
+  }
+
 }
